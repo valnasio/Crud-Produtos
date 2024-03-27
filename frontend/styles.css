@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/4483775/pexels-photo-4483775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#imagem-fazenda {
+    width: 150px;
+    height: 100px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+
+.container {
+    margin-top: 70px;
+    background-color: white;
+    box-shadow: 0 0 10px 4px #000;
+    border-radius: 5px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    margin: 70px auto 0;
+}
+
+#navbar {
+    margin-bottom: 40px;
+}
+
+.button-navbar {
+    width: 200px;
+    margin-right: 20px;
+    background-color: rgb(0, 86, 179);
+
+    &:hover {
+        background-color: #194181;
+    }
+}
+
+.container h1 {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+#observacao {
+    margin-top: 13px;
+    margin-bottom: 10px;
+    color: #262628;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+input,
+select,
+button {
+    margin-bottom: 1em;
+    width: 300px;
+    padding: 0.5em;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #194181;
+}
+
+#footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #262628;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+/* Estilo para a tabela */
+#tabela-pedidos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#tabela-pedidos th,
+#tabela-pedidos td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000;
+    max-width: 100px;
+    /* Adiciona borda de 1px sólida em todos os lados */
+}
+
+/* Estilo para o botão de excluir */
+.excluir-produto,
+.excluir-produto-confirmar {
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+}
+
+#editar-produto {
+    background-color: rgb(8, 8, 114);
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+}
+
+#editar-produto:hover {
+    background-color: rgb(21, 7, 214);
+    /* Define a cor de fundo como vermelho escuro quando hover */
+}
+
+.excluir-produto:hover {
+    background-color: rgb(123, 33, 33);
+    /* Define a cor de fundo como vermelho escuro quando hover */
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 1em;
+    }
+
+    input,
+    select,
+    button {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 90%;
+        padding: 1em;
+    }
+
+    input,
+    select,
+    button {
+        max-width: 100%;
+    }
+}
